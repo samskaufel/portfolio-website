@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Samantha Skaufel - Portfolio</title>
+    <!-- Replace with my favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <!-- font: poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font: montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <!-- viewport tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header>
+      <!-- logo here -->
+      <h1><a href="index.html" class="logo">S K A U F E L</a></h1>
+
+      <!-- main navigation -->
+      <nav class="main-navigation page-header_item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list_item navigation-list_item-active"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list_item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list_item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list_item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact">
+      <h2>Contact</h2>
+
+      <!-- contact form -->
+      <h3>Contact Form</h3>
+      <form action="" method="post" id="contact-form">
+        <!-- client can enter their email here -->
+        <label for="contact-email" class="standard-label">Email:</label>
+        <br />
+        <input type="email" id="contact-email" required />
+
+        <br />
+
+        <!-- client can enter their phone number here -->
+        <label for="contact-phone-number" class="standard-label"
+          >Phone Number:</label
+        >
+        <br />
+        <input
+          type="tel"
+          id="contact-phone-number"
+          pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+          required
+        />
+
+        <br />
+
+        <!-- client can type a message here -->
+        <label for="send-message" class="standard-label">Message:</label>
+        <br />
+        <textarea
+          required
+          maxlength="240"
+          id="send-message"
+          required
+        ></textarea>
+        <br />
+        <!-- button to submit contact form -->
+        <button type="button">Submit</button>
+      </form>
+
+      <h3>My Information</h3>
+      <!-- Link to my email -->
+      <p>
+        <a href="mailto:samskaufel@gmail.com?subject=Hello&body=Dear Sam"
+          >My email is samskaufel (at) gmail (dot) com</a
+        >
+      </p>
+      <!-- Link to my cell phone number -->
+      <p><a href="tel:4258795220">My phone number is 425-879-5220</a></p>
+      <!-- CTA button -->
+      <p><a href="mailto:samskaufel@gmail.com">Contact Me</a></p>
+    </main>
+
+    <footer>
+      <p>Find Me On</p>
+      <!-- links to professional profiles -->
+      <a href="http://github.com/samskaufel" target="_blank"
+        ><img src="img/2561442_github_icon.svg" alt="Github"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/samantha-skaufel-b09149178/"
+        target="_blank"
+        ><img src="img/104493_linkedin_icon.svg" alt="LinkedIn"
+      /></a>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
