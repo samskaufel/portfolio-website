@@ -26,18 +26,22 @@ body {
   margin: 50px;
 }
 
+/* "S K A U F E L" */
 .logo {
   color: var(--secondary-heading-color);
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   font-weight: bolder;
+  display: flex;
 }
 
+/* "Hello World!" */
 h2#title {
   color: var(--primary-heading-color);
   font-size: var(--primary-font-size);
 }
 
+/* page headings */
 h2 {
   font-size: var(--primary-font-size);
   font-weight: var(--primary-font-weight);
@@ -45,6 +49,7 @@ h2 {
   text-align: left;
 }
 
+/* section headings */
 h3 {
   font-size: var(--secondary-font-size);
   font-weight: var(--primary-font-weight);
@@ -52,6 +57,7 @@ h3 {
   text-align: center;
 }
 
+/* project titles */
 h4 {
   color: var(--primary-color);
   font-size: var(--secondary-font-size);
@@ -136,10 +142,11 @@ button:focus,
   padding: 20px;
 }
 
-.page-header_item {
+.page-header__item {
   flex: 0 1 200px;
 }
-.page-header_item:last-child {
+
+.page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
 }
@@ -151,6 +158,10 @@ button:focus,
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
 }
 
 * {
