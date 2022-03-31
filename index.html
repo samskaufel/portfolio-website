@@ -1,104 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Samantha Skaufel - Portfolio</title>
-    <!-- my favicon -->
-    <link
-      rel="shortcut icon"
-      href="img/favicon-96x96.ico"
-      type="image/x-icon"
-    />
-
-    <!-- font: poppins -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S K A U F E L</title>
+    <link rel="shortcut icon" href="img/favicon-96x96.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
-    <!-- font: montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-    <!-- viewport tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
-
   <body>
-    <!-- header including the logo and the main navigation -->
-
     <header class="page-header">
-      <!-- logo here -->
-      <h1><a href="index.html" class="logo">S K A U F E L</a></h1>
-
-      <nav class="main-navigation page-header_item">
+      <a href="index.html" class="logo"><h2 alt="logo" class="page-header__item">S K A U F E L</h2></a>
+      <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
             <a
               href="index.html"
               role="menuitem"
-              class="navigation-list_item navigation-list_item-active"
+              class="navigation-list__item navigation-list__item--active"
               >Home</a
             >
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list_item"
+            <a href="work.html" role="menuitem" class="navigation-list__item"
               >Work</a
             >
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list_item"
-              >About</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list_item"
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
               >Contact</a
             >
           </li>
         </ul>
       </nav>
     </header>
-
     <main>
       <div class="profile">
         <img
           src="img/profile_portrait.jpeg"
-          class="profile_portrait"
-          alt="Samantha Skaufel Portrait"
+          class="profile__portrait"
+          alt="Sam Skaufel portrait"
         />
-        <!-- main page title -->
-        <h2 id="title">Hello World!</h2>
-        <!-- brief introduction -->
-        <p>
-          My name is Samantha Skaufel.
-          <br />
-          I am a web developer from America.
-        </p>
+        <h1>Welcome to my portfolio</h1>
+        <p>My name is Sam Skaufel and I am a web developer student through CareerFoundry.</p>
       </div>
     </main>
-
-    <footer>
-      <p>Find Me On</p>
-      <!-- links to professional profiles -->
+    <footer class="page-footer">
+      <p>Find me on</p>
       <div class="social-media">
-        <a href="http://github.com/samskaufel" target="_blank"
-          ><img src="img/2561442_github_icon.svg" alt="Github"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/samantha-skaufel-b09149178/"
-          target="_blank"
-          ><img src="img/104493_linkedin_icon.svg" alt="LinkedIn"
-        /></a>
+        <a href="https://github.com/samskaufel" target="_blank"><img src="img/2561442_github_icon.svg" alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/samantha-skaufel-b09149178/" target="_blank"><img src="img/104493_linkedin_icon.svg" alt="LinkedIn" /></a>
       </div>
     </footer>
-
-    <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
 </html>

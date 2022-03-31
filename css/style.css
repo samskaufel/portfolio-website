@@ -1,117 +1,61 @@
-/* color scheme
-yellow #cda34f
-white #ffffff
-black #000000
-dark green #373f27 */
-
-:root {
-  --primary-color: #cda34f;
-  --secondary-color: #373f27;
-  --primary-font-size: 28px;
-  --secondary-font-size: 24px;
-  --primary-font-weight: 700;
-  --primary-heading-color: #fff;
-  --secondary-heading-color: #000;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--primary-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 2;
-  color: var(--secondary-color);
-  position: relative;
-  display: block;
-  margin: 50px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
 }
 
-.logo {
-  color: var(--secondary-heading-color);
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
-h2#title {
-  color: var(--primary-heading-color);
-  font-size: var(--primary-font-size);
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 30px;
 }
 
 h2 {
-  font-size: var(--primary-font-size);
-  font-weight: var(--primary-font-weight);
-  color: var(--primary-heading-color);
-  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 10px;
 }
 
 h3 {
-  font-size: var(--secondary-font-size);
-  font-weight: var(--primary-font-weight);
-  color: var(--primary-heading-color);
-  text-align: center;
-}
-
-h4 {
-  color: var(--primary-color);
-  font-size: var(--secondary-font-size);
-}
-
-main.contact {
-  text-align: center;
-}
-
-main.about {
-  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 a {
-  color: var(--secondary-color);
-}
-
-a:visited {
-  /* visited link */
-  color: var(--secondary-color);
-}
-
-a:hover,
-a:focus {
-  /* No underlining when hovering over a link */
+  color: black;
   text-decoration: none;
 }
 
-a:active {
-  /* selected link */
-  color: var(--secondary-color);
+a:hover, a:focus {
+cursor: pointer;
+color: gray;
 }
 
-button,
-.button {
-  /* overwrites browser defaults and resets the border */
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+.navigation-list__item--active {
   text-decoration: none;
-  font-weight: var(--primary-font-weight);
-  border-radius: 5em;
-  transition: 0.3s;
-  border: 3px solid var(--secondary-color);
-  padding: 0.6em 1.3em;
 }
 
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  background-color: var(--secondary-color);
-  color: var(--primary-heading-color);
-  font-weight: var(--primary-font-weight);
+.navigation-list {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.page-footer {
+  clear: both;
 }
 
 .profile {
@@ -119,14 +63,12 @@ button:focus,
   margin: 0 auto;
 }
 
-.profile_portrait {
-  float: left;
-  width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
+.page-footer {
+  clear: both;
+  text-align: center;
 }
 
-.profile_text {
+.profile__text {
   flex: 1 1 100px;
 }
 
@@ -136,16 +78,14 @@ button:focus,
   padding: 20px;
 }
 
-.page-header_item {
+.page-header__item {
   flex: 0 1 200px;
-}
-.page-header_item:last-child {
-  flex-grow: 1;
-  text-align: right;
+  color: black;
 }
 
-.navigation-list {
-  list-style-type: none;
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
 }
 
 .navigation-list li {
@@ -153,85 +93,80 @@ button:focus,
   margin-left: 15px;
 }
 
-* {
-  box-sizing: border-box;
+.grid__item {
+  display: inline-block;
+  width: 33%;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  text-align: center;
+form {
+  margin-left: 30px;
 }
 
-.grid_item {
-  background-color: var(--primary-heading-color);
+/* .logo {
+  font-family: ;
+} */
+
+button {
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
+
 }
 
-.grid_item h2 {
-  color: var(--primary-color);
+button:hover {
+  color: white;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
-@keyframes color-change {
-  from {
-    fill: #edc655;
-  }
-  to {
-    fill: #f76414;
-  }
-}
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-footer {
-  color: var(--secondary-heading-color);
-  margin-top: 125px;
-  text-align: center;
-}
-
-@media all and (max-width: 500px) {
+@supports (display: grid) {
   .grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 30px;
   }
-}
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
+  .grid__item {
+    background-color: white;
+    width: auto;
+    min-height: auto;
+    margin: 0;
   }
 }
 
-.experience {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
+  .flexbox-example {
+    background-color: transparent;
+    border: 1px dotted black;
+    padding: 0px 20px;
+  }
+
+  .flexbox-example .header {
+    padding: 50px;
+    text-align: center;
+    background: #55baf5;
+    color: white;
+  }
+
+  @media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
