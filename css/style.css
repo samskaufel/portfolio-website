@@ -98,6 +98,14 @@ color: gray;
   width: 33%;
 }
 
+.pokedex-main {
+  width: 800px;
+}
+
+.pokedex-modal {
+  width: 800px;
+}
+
 form {
   text-align: center;
 
